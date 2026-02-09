@@ -1,8 +1,11 @@
 {
   "expo": {
-    "name": "white-screen-flashlight",
+    "name": "White Screen Flashlight",
     "slug": "white-screen-flashlight",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,15 +16,21 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.mvkdev9.whitescreenflashlight"
     },
     "android": {
+      "package": "com.mvkdev9.whitescreenflashlight",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#0078ff"
       },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "permissions": [
+        "WRITE_SETTINGS",
+        "BATTERY_STATS"
+      ],
+      "edgeToEdgeEnabled": true
     },
     "web": {
       "favicon": "./assets/favicon.png"

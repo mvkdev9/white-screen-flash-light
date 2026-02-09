@@ -32,8 +32,27 @@
       ],
       "edgeToEdgeEnabled": true
     },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true
+          }
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f0c054c7-7815-4249-8cc9-ec0cc976667b"
+      }
+    },
+    "plugins": [
+      "expo-build-properties"
+    ]
   }
 }
